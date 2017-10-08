@@ -1,4 +1,4 @@
-%PROMO 1
+%PROMO 2
 % x est la solution optimale
 % 5 jours par semaine et 4 créneaux par jour
 % on représente un créneau par un rectangle de 1 sur 2
@@ -13,7 +13,7 @@
     axis([0 10 0 4]);
     
     set(gca,'Xtick',0:2:10);  set(gca,'Ytick',0:1:5);  
-    title('EDT promo 1');
+    title('EDT promo 2');
     xlabel('jour'); ylabel('heure');
 
     %On définit les créneaux sous forme de rectangle (blanc par défaut, en
@@ -28,35 +28,35 @@
     
     for i=1:5
         for j=1:4
-            if Promo1(j,i) == 1
+            if Promo2(j,i) == 1
                 creneau(i,j).FaceColor='blue';
                 text(2*(i-1)+0.2, 4-j+0.5, 'Young Anglais');
             end
-            if Promo1(j,i) == 2
+            if Promo2(j,i) == 2
                 creneau(i,j).FaceColor='yellow';
                 text(2*(i-1)+0.1, 4-j+0.5, 'Proton Physique');
             end
-            if Promo1(j,i) == 3
+            if Promo2(j,i) == 3
                 creneau(i,j).FaceColor='red';
                 text(2*(i-1)+0.2, 4-j+0.5, 'Droite Maths');
             end
-            if Promo1(j,i) == 4
+            if Promo2(j,i) == 4
                 creneau(i,j).FaceColor='magenta';
                 text(2*(i-1)+0.2, 4-j+0.5, 'Ellips Maths');
             end
-            if Promo1(j,i) == 5
+            if Promo2(j,i) == 5
                 creneau(i,j).FaceColor='green';
                 text(2*(i-1)+0.2, 4-j+0.5, 'Pascal Info');
             end
-            if Promo1(j,i) == 6
+            if Promo2(j,i) == 6
                 creneau(i,j).FaceColor='cyan';
                 text(2*(i-1)+0.2, 4-j+0.5, 'Ada Info');
             end
-            if Promo1(j,i) == 7
+            if Promo2(j,i) == 7
                 creneau(i,j).FaceColor=[0.5 0.2 0.75];
                 text(2*(i-1)+0.2, 4-j+0.5, 'Gazelle Sport');
             end
-            if Promo1(j,i) == 8
+            if Promo2(j,i) == 8
                 creneau(i,j).FaceColor=[1 0.7 0];
                 text(2*(i-1)+0.2, 4-j+0.5, 'Bigceps Sport');
             end
