@@ -47,13 +47,11 @@ end
 % Création d'une figure
 figure;
 
-% Affichage de la promo 1 sur la figure 1
-subplot(2,1,1);
-Promo1 = reshape(EDT(:, :, 1), [t, d]);
-AffichagePromo1;
+% Affichage des sur les figure successives
+for numPromo=1:c
+    subplot(c,1,numPromo);
+    promo = reshape(EDT(:, :, numPromo), [t, d]);
+    AffichagePromo;
+end
 
-% Affichage de la promo 2 sur la figure 2
-subplot(2,1,2);
-Promo2 = reshape(EDT(:, :, 2), [t, d]);
-AffichagePromo2;
 
